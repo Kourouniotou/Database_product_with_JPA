@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<title>Product Database</title>
+</head>
+
+<body>
+	
+	<h1 >Please, fill in the blanks below to add the product on database.</h1>
+	<br><br>
+	
+	<div class="content">
+	
+		<form method="post" action="servlet.do" id="carform" autocomplete="off">
+	  		<label for="barcode"><b>Barcode</b></label>
+	  		<br>
+	  		<input style="color:rgb(74, 129, 169);" type="text" id="barcode" name="barcode" placeholder="Enter barcode here">
+	  		<br><br>
+	  		
+	  		<label for="name"><b>Name</b></label>
+	  		<br>
+	  		<input style="color:rgb(74, 129, 169);" type="text" id="name" name="name" placeholder="Enter name here">
+	  		<br><br>
+	  		
+	  		<label for="color"><b>Color</b></label>
+	  		<br>
+	  		<input style="color:rgb(74, 129, 169);" type="text" id="color" name="color" placeholder="Enter color here">
+	  		<br><br>
+	  		
+	  		<label for="description"><b>Description</b></label>
+	  		<br>
+	  		<input style="color:rgb(74, 129, 169);" type="text" id="description" name="description" placeholder="Enter description here" >
+	  		<br><br>
+	  		
+	  		<input style="color:rgb(61, 70, 85);" type="submit" value="Import Product">
+		</form>
+		
+		<form method="post" action="ProductList.do">
+			<input style="color:rgb(61, 70, 85);" type="submit" value="View Database">
+		</form>
+	
+	</div>
+	
+</body>
+</html>

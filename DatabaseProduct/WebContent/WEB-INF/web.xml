@@ -1,0 +1,26 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"  
+	version="4.0"> 
+
+<servlet>
+	<servlet-name>connector</servlet-name>
+	<servlet-class>com.example.web.ProductServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>connector</servlet-name>
+	<url-pattern>/servlet.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ViewList</servlet-name>
+	<servlet-class>com.example.web.ViewListServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>ViewList</servlet-name>
+	<url-pattern>/ProductList.do</url-pattern>
+</servlet-mapping>
+
+</web-app> 
